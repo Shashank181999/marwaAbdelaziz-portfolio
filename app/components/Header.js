@@ -90,7 +90,7 @@ export default function Header() {
                 className="group relative px-4 py-2 overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <span className="relative z-10 text-sm font-bold tracking-wider text-white uppercase transition-colors duration-300 group-hover:text-red-500">
+                <span className="relative z-10 text-sm font-light tracking-[0.2em] text-white uppercase transition-colors duration-300 group-hover:text-red-500">
                   {item.name}
                 </span>
                 <div className="absolute inset-0 bg-white/5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100" />
@@ -99,7 +99,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="ml-4 relative px-6 py-2 bg-red-900 text-white font-bold text-sm tracking-wider uppercase overflow-hidden group hover:bg-red-800 transition-all duration-300 rounded-full"
+              className="ml-4 relative px-6 py-2 bg-red-900 text-white font-light text-sm tracking-[0.2em] uppercase overflow-hidden group hover:bg-red-800 transition-all duration-300 rounded-full"
             >
               <span className="relative z-10">Let&apos;s Talk</span>
             </Link>
@@ -148,7 +148,7 @@ export default function Header() {
                   transition: `all 300ms ease ${index * 50}ms`,
                 }}
               >
-                <span className="text-lg font-bold tracking-wide text-white uppercase">
+                <span className="text-lg font-light tracking-[0.15em] text-white uppercase">
                   {item.name}
                 </span>
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-900 scale-y-0 transition-transform duration-300 group-hover:scale-y-100 rounded-l-xl" />
@@ -157,7 +157,7 @@ export default function Header() {
             <Link
               href="/contact"
               onClick={() => setMenuOpen(false)}
-              className="mt-2 px-6 py-2 bg-red-900 text-white font-bold text-lg tracking-wide uppercase hover:bg-red-800 hover:shadow-lg hover:shadow-red-900/50 transition-all duration-300 rounded-full text-center"
+              className="mt-2 px-6 py-2 bg-red-900 text-white font-light text-lg tracking-[0.15em] uppercase hover:bg-red-800 hover:shadow-lg hover:shadow-red-900/50 transition-all duration-300 rounded-full text-center"
             >
               Let&apos;s Talk
             </Link>
